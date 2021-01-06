@@ -9,23 +9,28 @@ function clearMessages(){
 }
 
 document.getElementById('button1').addEventListener('click', function(){
-    clearMessages(), playGame(1);
+    playGame(1);
 });
 
 
 
 document.getElementById('button2').addEventListener('click', function(){
-    clearMessages(), playGame(2);
+    playGame(2);
 });
 
 document.getElementById('button3').addEventListener('click', function(){
-    clearMessages(), playGame(3);
+    playGame(3);
 });
 
 
 
 function playGame(playerInput) {
 
+    function clearMessages(){
+        document.getElementById('messages').innerHTML = '';
+    }
+
+    clearMessages();
 
     let computerMove;
         
